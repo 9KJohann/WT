@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formular</title>
+</head>
+<body>
+	<form action="/verarbeitung.php" method="GET">
+		<h1>Mein erstes Formular</h1>
+		<h2>Umfrage zur Veranstaltung<br/>"Webtechnologien"</h2>
+		<p>
+			<label for="vorname">Vorname:</label>
+			<input type="text" name="vorname" id="vorname" placeholder="Dein Vorname">
+		</p>
+		<p>
+			<label for="nachname">Nachname:</label>
+			<input type="text" name="nachname" id="nachname" placeholder="Dein Nachname">
+		</p>
+		<p>
+			<label for="semester">Semester:</label>
+			<input type="radio" name="semester" id="semester-1" value="1">
+			<label for="semester-1">1</label>
+			<input type="radio" name="semester" id="semester-2" value="2">
+			<label for="semester-2">2</label>
+			<input type="radio" name="semester" id="semester-3" value="3">
+			<label for="semester-3">3</label>
+			<input type="radio" name="semester" id="semester-4" value="4">
+			<label for="semester-4">4</label>
+		</p>
+		<p>
+			<div>Aktivitäten außerhalb der Vorlesung:</div>
+			<br>
+			<input type="checkbox" name="aktion" id="skript" value="skript">
+			<label for="skript">täglicher Blick ins Skript</label>
+			<input type="checkbox" name="aktion" id="übungsaufgabe" value="übungsaufgabe">
+			<label for="übungsaufgabe">2 Übungsaufgaben pro Woche lösen</label>
+			<input type="checkbox" name="aktion" id="mitschrieb" value="mitschrieb">
+			<label for="mitschrieb">Mitschrieb überarbeiten</label>	
+		</p>
+		<p>
+			<div>
+				<label for="kommentar">Was hat Dir bisher am besten gefallen?</label>
+			</div>
+			<textarea name="kommentar" id="kommentar" cols="50" rows="6">Also...</textarea>
+		</p>
+		<input type="submit" value="OK">
+	</form>
+</body>
+</html>
